@@ -18,3 +18,8 @@ docker build . -t rocker/shiny-sdea:4.3.1 -f rocker-shiny-data-table.Dockerfile
 ```
 
 Se descarta la última por tardar más de 25 minutos en compilar.
+
+## Por hacer.
+
+* Publicar contenedor base en formato Docker y Singularity.
+* Integración continua para github y gitlab.
