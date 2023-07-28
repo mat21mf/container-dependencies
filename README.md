@@ -2,7 +2,7 @@
 
 ## Propósitos.
 
-* Seleccionar imágenes disponibles para modificar y utilizar como contenedor base para distintos aplicativos.
+* Seleccionar imágenes disponibles para modificar y utilizar como contenedor base en diferentes aplicaciones.
 * Compilar varias imágenes y medir sus respectivos tiempos.
 
 ```console
