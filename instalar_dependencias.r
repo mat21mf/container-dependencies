@@ -17,4 +17,5 @@ suppressPackageStartupMessages({
   if(!require(shinythemes)) {install.packages("shinythemes", repos=str_repo)}
   if(!require(tidyverse)) {install.packages("tidyverse", repos=str_repo)}
   if(!require(tools)) {install.packages("tools", repos=str_repo)}
+  if(!require(openxlsx)) {install.packages("openxlsx", repos=str_repo)}
 })
