@@ -43,8 +43,6 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     unixodbc \
     unixodbc-dev
 
-COPY Rprofile.site /etc/R
-
-RUN install2.r DT openxlsx
+RUN install2.r DT openxlsx shinythemes
 
 RUN Rscript -e "data.table::update_dev_pkg()"
