@@ -36,13 +36,21 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     libudunits2-dev \
     libxml2-dev \
     libxt-dev \
-    libz-dev \
+    zlib1g-dev \
     pandoc \
     pandoc-citeproc \
     sudo \
     unixodbc \
     unixodbc-dev
 
-RUN install2.r DT openxlsx shinythemes RMySQL pool shinyjs
-
 RUN Rscript -e "data.table::update_dev_pkg()"
+
+RUN install2.r --error DT
+RUN install2.r --error openxlsx
+RUN install2.r --error shinythemes
+RUN install2.r --error RMySQL
+RUN install2.r --error pool
+RUN install2.r --error shinyjs
+RUN install2.r --error leaflet.extras
+RUN install2.r --error RPostgreSQL
+RUN install2.r --error sf
